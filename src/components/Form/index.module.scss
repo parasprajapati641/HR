@@ -1,0 +1,30 @@
+.mainHeader{
+padding: 50px;
+    .main{
+        .mail{
+            margin-left: 30px;
+        }
+        .header{
+            width: 30%;
+        }
+        .submit{
+            margin-left: 80px;
+        }
+    }
+}
+.footer{
+    width: 60%;
+    border: 1px solid black;
+    .footerMain{
+        text-align: left;
+    }
+    .footerHeader{
+        border: 1px solid black;
+        // .footerDelete{
+        //     width: 40px;
+        // }
+        // .footerEdit{
+        //     width: 20px;
+        // }
+    }
+}

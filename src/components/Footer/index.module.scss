@@ -1,0 +1,42 @@
+.footerMain {
+  width: 100%;
+  background-color: black;
+  margin-top: 80px;
+  .detail {
+    border-bottom: 1px solid white;
+    display: flex;
+    .tempor {
+      margin: 0px 76px 0px 21px;
+      padding: 62px;
+      .loream {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .dolor {
+        color: #e9e7f1;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .imgmain {
+        margin-left: -10px;
+        .footerimg {
+          width: 30px;
+          height: 30px;
+          margin-left: 10px;
+        }
+      }
+      .Company {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+}
+.footerTxt {
+  text-align: center;
+  color: #fff;
+  margin-top: -10px;
+  padding: 22px;
+}
+}

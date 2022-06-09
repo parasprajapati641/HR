@@ -1,0 +1,347 @@
+.Popover{
+  cursor: pointer;
+}
+
+.headerMain {
+  background-color: #7784ff;
+  height: 950px;
+  border-radius: 0% 100% 0% 100% / 44% 0% 100% 56%;
+  width: 100%;
+}
+.header {
+  .eduo {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+  }
+  .about {
+    font-size: 15px;
+    display: flex;
+    // padding: 19px;
+    justify-content: space-around;
+    color: #fff;
+    margin: 20px 145px;
+    span{
+
+      cursor: pointer;
+    }
+  }
+  .demo {
+    padding: 8px 100px;
+    .searchButton {
+      background-color: #fff !important;
+      color: #7784ff !important;
+      border-width: 0px !important;
+    }
+  }
+}
+.content {
+  margin: 140px 0px 0px 17px;
+  .headertxt {
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+  }
+  .Goin {
+    font-size: 15px;
+    color: #fff;
+  }
+  .paras {
+    display: flex;
+    margin-top: 40px;
+    .complete {
+      .searchButton {
+        background-color: #fff !important;
+        color: #7784ff !important;
+        border-width: 0px !important;
+      }
+    }
+    .player {
+      background-color: #fff;
+      width: 50px;
+      border-radius: 60px;
+      margin: -5px 0px 0px 60px;
+    }
+    .what {
+      text-decoration: underline;
+      padding: 10px;
+      font-size: medium;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  // margin-left: 190px;
+  // margin-top: -430px;
+}
+.group {
+  display: flex;
+  // margin-top: 90px;
+  // padding: 8px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10  0px 80px 0px 0px;
+  .school {
+    background-color: #ffffff;
+    width: 160px;
+    border: 3px solid #7784ff;
+    border-radius: 30px;
+    height: 180px;
+    .student {
+      width: 85px;
+      margin-left: 32px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .cam {
+      color: #10c68d;
+      margin-left: 40px;
+      font-size: 25px;
+      font-weight: 800;
+      margin-left: 30px;
+      margin-bottom: -8px;
+    }
+    .camero {
+      color: black;
+      font-size: 16px;
+      margin-left: 48px;
+    }
+  }
+  .one {
+    background-color: #ffffff;
+    width: 160px;
+    border: 3px solid #7784ff;
+    border-radius: 30px;
+    height: 180px;
+    .two {
+      width: 90px;
+      margin-left: 32px;
+      margin-bottom: 15px;
+    }
+    .three {
+      color: #7f6cbb;
+      margin-left: 40px;
+      font-size: 25px;
+      font-weight: 800;
+      margin-bottom: -8px;
+    }
+    .four {
+      color: black;
+      font-size: 16px;
+      margin-left: 50px;
+    }
+  }
+  .A {
+    background-color: #ffffff;
+    width: 160px;
+    border: 3px solid #7784ff;
+    border-radius: 30px;
+    height: 180px;
+    .B {
+      width: 80px;
+      margin-left: 35px;
+      margin-bottom: 14px;
+      margin-top: 10px;
+    }
+    .C {
+      color: #7784ff;
+      margin-left: 40px;
+      font-size: 25px;
+      font-weight: 800;
+      margin-left: 50px;
+      margin-bottom: -8px;
+    }
+    .D {
+      color: black;
+      font-size: 16px;
+      margin-left: 40px;
+    }
+  }
+}
+.contentSec {
+  .basic {
+    width: 100%;
+    .login {
+      width: 100%;
+      height: 650px;
+    }
+  }
+  .debit {
+    margin: 70px 90px;
+    .our {
+      font-size: 40px;
+      font-weight: 800;
+    }
+    .do {
+      display: flex;
+      margin-top: 20px;
+      .ship {
+        width: 55px;
+        height: 55px;
+      }
+      .does {
+        margin-left: 15px;
+        .online {
+          font-size: 20px;
+          font-weight: 800;
+        }
+        .get {
+          font-size: 15px;
+          font-weight: 500;
+          color: #696982;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.firstContainer {
+  display: flex;
+  align-items: center;
+  .sec {
+    margin: 450px 0px 0px 110px;
+    > div {
+      .become {
+        font-weight: 800;
+        margin-bottom: 20px;
+        font-size: 40px;
+      }
+    }
+    .program {
+      margin-bottom: 30px;
+      .apply {
+        font-size: 15px;
+        font-weight: 500;
+        color: #696982;
+      }
+    }
+  }
+}
+.man {
+  width: 100%;
+}
+
+.handle {
+  margin-top: 110px;
+  .popular {
+    font-weight: 800;
+    text-align: center;
+    font-size: 40px;
+  }
+  .mit {
+    margin-left: 36%;
+    font-size: 15px;
+    color: #696982;
+    font-weight: 500;
+  }
+  .info {
+    text-align: center;
+    font-size: 15px;
+    color: #696982;
+    font-weight: 500;
+  }
+}
+
+.justien {
+  width: 600px;
+  border: 3px solid #7784ff;
+  margin: 60px 0px 120px 18px;
+  padding: 40px;
+  border-radius: 40px;
+  .topic {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #696982;
+  }
+  .argument {
+    font-size: 15px;
+    margin-left: 46px;
+    font-weight: 500;
+    color: #696982;
+  }
+  .sentence {
+    font-size: 15px;
+    margin-left: 88px;
+    font-weight: 500;
+    color: #696982;
+  }
+  > div {
+    .later {
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      border: 2px solid #7784ff;
+      margin: 20px 234px;
+    }
+    .doe {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .software {
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      color: #696982;
+    }
+  }
+}
+.in {
+  width: 900px;
+  background-color: #fff;
+  padding: 40px;
+  margin-left: 27%;
+  border: 3px solid #7784ff;
+  border-radius: 40px;
+  .touch {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .should {
+    font-size: 15px;
+    font-weight: 500;
+    color: #696982;
+    margin-left: 135px;
+  }
+  .on {
+    font-size: 15px;
+    font-weight: 500;
+    color: #696982;
+    margin-left: 310px;
+  }
+  > div {
+    .put {
+      width: 600px;
+      background-color: #fff;
+      border: 1px solid #7784ff;
+      /*padding: 20px;
+  */
+      display: flex;
+      border-radius: 18px;
+      margin: 0px 0px 0px 110px;
+      .address {
+        padding: 22px;
+        .email {
+          font-size: 14px;
+          font-weight: 500;
+          color: #696982;
+        }
+      }
+      .cribe {
+        width: 120px;
+        background-color: #7784ff;
+        color: #fff;
+        margin: 3px 0px 3px 266px;
+        padding: 19px;
+        border-radius: 15px;
+        font-weight: 800;
+      }
+    }
+  }
+}

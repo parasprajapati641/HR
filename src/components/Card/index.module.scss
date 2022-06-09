@@ -1,0 +1,149 @@
+.for {
+  width: 70%;
+  background-color: #e1e7f5;
+  margin: 100px 0px 0px 280px;
+  border-radius: 70px;
+  .forDiv {
+    .innovation {
+      font-weight: 800;
+      font-size: 40px;
+      text-align: center;
+    }
+    .smart {
+      font-size: 15px;
+      font-weight: 500;
+      margin-left: 27%;
+      color: #696982;
+    }
+    .result {
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      color: #696982;
+    }
+  }
+  > div {
+    .line {
+      display: flex;
+      .service {
+        width: 27%;
+        background-color: #fff;
+        margin-left: 60px;
+        margin-bottom: 60px;
+        border-radius: 40px;
+        .blen {
+          width: 100%;
+        }
+        .freed {
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .using {
+          margin: 5px 0px 40px 135px;
+        }
+      }
+      .service {
+        width: 27%;
+        background-color: #fff;
+        margin-left: 60px;
+        margin-bottom: 60px;
+        border-radius: 40px;
+        .real {
+          width: 100%;
+          margin: 70px 0px 85px 0px;
+        }
+        .time {
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .using {
+          margin: 5px 0px 40px 135px;
+        }
+      }
+      .service {
+        width: 27%;
+        background-color: #fff;
+        margin-left: 60px;
+        margin-bottom: 60px;
+        border-radius: 40px;
+        .real {
+          width: 100%;
+          margin: 70px 0px 85px 0px;
+        }
+        .center {
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+          margin-top: -21px;
+        }
+        .using {
+          margin: 5px 0px 40px 135px;
+        }
+      }
+    }
+    .streak {
+      display: flex;
+      .service {
+        width: 27%;
+        background-color: #fff;
+        margin-left: 60px;
+        margin-bottom: 60px;
+        border-radius: 40px;
+        .real {
+          width: 100%;
+          margin: 70px 0px 85px 0px;
+        }
+        .focus {
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+          margin-top: -63px;
+        }
+        .using {
+          margin: 5px 0px 40px 135px;
+        }
+      }
+      .service {
+        width: 27%;
+        background-color: #fff;
+        margin-left: 60px;
+        margin-bottom: 60px;
+        border-radius: 40px;
+        .real {
+          width: 100%;
+          margin: 70px 0px 85px 0px;
+        }
+        .any {
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .using {
+          margin: 5px 0px 40px 135px;
+        }
+      }
+      .service {
+        width: 27%;
+        background-color: #fff;
+        margin-left: 60px;
+        margin-bottom: 60px;
+        border-radius: 40px;
+        .real {
+          width: 100%;
+          margin: 70px 0px 85px 0px;
+        }
+        .focus {
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+          margin-top: -63px;
+        }
+        .using {
+          margin: 5px 0px 40px 135px;
+        }
+      }
+    }
+  }
+}
