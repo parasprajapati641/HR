@@ -40,8 +40,8 @@ function Design() {
           </Dropdown>
         </Col>
       </Row>
-      <Row >
-        <Col xxl={10}>
+      <Row justify="center">
+        <Col xs={24} sm={22} md={14} lg={12} xl={8} xxl={6} className={styles.companyTitle}>
           <span className={styles.file}>Company</span>
           <p className={styles.Fill}>
             Fill in the respective fieldsfor your company profile.
