@@ -41,7 +41,7 @@ function Design() {
         </Col>
       </Row>
       <Row >
-        <Col xxl={4}>
+        <Col xxl={10}>
           <span className={styles.file}>Company</span>
           <p className={styles.Fill}>
             Fill in the respective fieldsfor your company profile.
