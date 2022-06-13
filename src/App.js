@@ -10,6 +10,7 @@ import AntExample from "./components/AntExample/Dropdown.jsx"
 import TablePage from "./components/TablePage/DemoPage.jsx"
 import ProgressDemo from "./components/ProgressDemo/ProgressDemo.jsx"
 import Company from "./components/RajDesign/Company.jsx"
+import Benz from "./components/Rajdesign-2/Benz.jsx"
 // import { useEffect, useState } from "react";
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
         <Route path="/progress" element={<ProgressDemo />} />
 
         <Route path="/company" element={<Company />} />
+
+        <Route path="/benz" element={<Benz />} />
 
       </Routes>
     </div>
