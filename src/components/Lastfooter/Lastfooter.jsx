@@ -36,7 +36,7 @@ function last() {
                             </Col>
 
                             <Col
-                                xs={10}
+                                xs={22}
                                 md={5}
                                 lg={5}
                                 xl={5}
@@ -51,7 +51,7 @@ function last() {
                                 <Radio value={2}>No</Radio>
                             </Col>
                             <Col
-                                xs={10}
+                                xs={22}
                                 md={5}
                                 lg={5}
                                 xl={5}

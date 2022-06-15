@@ -78,11 +78,11 @@ export const Dashboard = (props) => {
     <Fragment>
       <div className={styles.headerMain}>
         <Row justify="center" className={styles.header}>
-          <Col sm={24} xs={24} md={4} lg={12} xxl={2}>
+          <Col sm={24} xs={24} md={4} lg={12} xl={18} xxl={2}>
             {/* <Button >Logout</Button> */}
             <div className={styles.eduo}>Eduo.</div>
           </Col>
-          <Col xs={24} sm={24} md={4} lg={12} xxl={7} className={styles.about}>
+          <Col xs={24} sm={24} md={4} lg={12} xl={12} xxl={24} className={styles.about}>
             <span onClick={() => handleCourse()}>Courses</span>
             <span onClick={() => handlePlatform()}>Platforms</span>
             <span onClick={() => handleInnovation()}>Innovations</span>
@@ -104,7 +104,7 @@ export const Dashboard = (props) => {
           </Col>
         </Row>
         <Row justify="center">
-          <Col sm={24} xs={24} md={4} lg={24} xxl={8}>
+          <Col sm={24} xs={24} md={4} lg={24} xl={19} xxl={8}>
             <div>
               <div className={styles.content}>
                 <h1 className={styles.headertxt}>
@@ -133,6 +133,7 @@ export const Dashboard = (props) => {
                   <div className={styles.what}>
                     <span>What's Eduo?</span>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -154,8 +155,8 @@ export const Dashboard = (props) => {
               </div>
             </div>
           </Col>
-          <Col xs={24} md={4} lg={10} xxl={9}>
-            <img src={bannerGirl} alt={"banner"} className={styles.contact} />
+          <Col xs={24} md={4} lg={10} xl={0} xxl={9}>
+            {/* <img src={bannerGirl} alt={"banner"} className={styles.contact} /> */}
           </Col>
         </Row>
       </div>
@@ -165,7 +166,7 @@ export const Dashboard = (props) => {
             <img src={login} alt={"banner"} className={styles.login} />
           </div>
         </Col>
-        <Col sm={12} xs={12} md={6} lg={10} xxl={9}>
+        <Col sm={12} xs={12} md={6} lg={10} xl={12} xxl={9}>
           <div className={styles.debit}>
             <span className={styles.our}>
               Benefit from our online<br></br> learning
@@ -245,7 +246,7 @@ export const Dashboard = (props) => {
         <Card />
       </div>
       <Row justify="center">
-        <Col sm={24} xs={24} md={6} lg={12} xxl={24}>
+        <Col sm={24} xs={24} md={6} lg={12} xl={24} xxl={24}>
           <div className={styles.handle}>
             <h4 className={styles.popular}>Student Testimonial </h4>
             <span className={styles.mit}>
@@ -259,7 +260,7 @@ export const Dashboard = (props) => {
         </Col>
       </Row>
       <Row justify="center" ref={studentRef}>
-        <Col sm={24} xs={24} md={6} lg={12} xxl={8}>
+        <Col sm={24} xs={24} md={6} lg={12} xl={10} xxl={8}>
           <div className={styles.justien}>
             <span className={styles.topic}>
               "A paragraph is a series of related sentences developing a central
@@ -282,7 +283,7 @@ export const Dashboard = (props) => {
         </Col>
       </Row>
       <Row justify="center">
-        <Col sm={24} xs={24} md={6} lg={12} xxl={24}>
+        <Col sm={24} xs={24} md={6} lg={12} xl={14} xxl={24}>
           <div className={styles.in}>
             <h1 className={styles.touch}>Get In Touch</h1>
             <span className={styles.should}>

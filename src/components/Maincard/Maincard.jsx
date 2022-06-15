@@ -22,7 +22,7 @@ function cardMap() {
 
   return (
     <Row justify="center">
-      <Col xs={20} sm={16} md={12} lg={8} xl={4} xxl={24}>
+      <Col xs={20} sm={16} md={12} lg={8} xl={24} xxl={24}>
         <div>
           <div className={styles.mainContent}>
             <h2 className={styles.popular}>Our Popular Couses</h2>
@@ -38,7 +38,7 @@ function cardMap() {
       </Col>
       {data.map((item, index) => {
         return (
-          <Col xxl={6} key={index}>
+          <Col xl={7} xxl={6} key={index}>
             <div className={styles.boxContainer}>
               <div className={styles.magic}>
                 <img src={item.image} alt="computer" className={styles.work} />

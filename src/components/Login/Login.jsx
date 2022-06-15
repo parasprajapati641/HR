@@ -32,13 +32,15 @@ function Contant() {
 
   return (
     <Row justify="center" className={styles.loginMain}>
-      <Col xl={7}>
+      <Col xl={9}>
         <div className={styles.headerMain}>
           <img src={logo} alt="logo" />
         </div>
+        
         <div className={styles.loginName}>
           <p>{"Welcome to <COMPANY> HR Application"}</p>
         </div>
+       
         <Form name="login-form" onFinish={onFinish}>
           <Form.Item name="username">
             <Input

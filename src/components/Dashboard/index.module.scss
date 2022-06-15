@@ -20,7 +20,8 @@
     // padding: 19px;
     justify-content: space-around;
     color: #fff;
-    margin: 20px 145px;
+    margin: -35px 1px 0px 151px;
+    
     span{
 
       cursor: pointer;
@@ -36,7 +37,7 @@
   }
 }
 .content {
-  margin: 140px 0px 0px 17px;
+  margin: 35px 0px 0px 30px;
   .headertxt {
     font-weight: 700;
     font-size: 60px;
@@ -81,9 +82,10 @@
   display: flex;
   // margin-top: 90px;
   // padding: 8px;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
-  margin: 10  0px 80px 0px 0px;
+  margin: 33px;
+  margin-top: 115px;
   .school {
     background-color: #ffffff;
     width: 160px;
@@ -116,6 +118,7 @@
     border: 3px solid #7784ff;
     border-radius: 30px;
     height: 180px;
+    margin: 50px;
     .two {
       width: 90px;
       margin-left: 32px;
@@ -233,7 +236,7 @@
     font-size: 40px;
   }
   .mit {
-    margin-left: 36%;
+    margin-left: 32%;
     font-size: 15px;
     color: #696982;
     font-weight: 500;
@@ -295,7 +298,7 @@
   width: 900px;
   background-color: #fff;
   padding: 40px;
-  margin-left: 27%;
+  // margin-left: 27%;
   border: 3px solid #7784ff;
   border-radius: 40px;
   .touch {
@@ -337,7 +340,7 @@
         width: 120px;
         background-color: #7784ff;
         color: #fff;
-        margin: 3px 0px 3px 266px;
+        margin: 3px 0px 3px 274px;
         padding: 19px;
         border-radius: 15px;
         font-weight: 800;

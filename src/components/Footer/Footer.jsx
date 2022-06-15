@@ -8,16 +8,18 @@ import styles from "./index.module.scss";
 function Footer() {
   return (
     <Row justify="center">
-      <Col xxl={24}>
+      <Col xl={24} xxl={24}>
         <div className={styles.footerMain}>
           <div className={styles.detail}>
             <div className={styles.tempor}>
               <h1 className={styles.loream}>Eduo.</h1>
+
               <p className={styles.dolor}>
                 Loream ipsum dolor sit amet,<br></br>consectetur adipiscing
-                elit,sed do<br></br> eiusmod tempor incididunt.Loream<br></br>{" "}
+                elit,sed do<br></br> eiusmod tempor incididunt.Loream<br></br>
                 ipsum dolor sit
               </p>
+ 
               <div className={styles.imgmain}>
                 <div>
                   <img src={bihance} alt="bihance" className={styles.footerimg} />

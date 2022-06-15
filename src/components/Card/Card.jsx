@@ -9,7 +9,7 @@ import styles from "./index.module.scss";
 function Card() {
   return (
     <Row justify="center">
-      <Col xxl={24}>
+      <Col xl={24} xxl={24}>
         <div>
           <div className={styles.for}>
             <div className={styles.forDiv}>

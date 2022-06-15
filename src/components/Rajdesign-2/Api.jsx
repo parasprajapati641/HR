@@ -9,14 +9,53 @@ function Comment() {
 
   const getTableComment = async () => {
     try {
-      const data = await axios.get("https:jsonplaceholder.typicode.com/posts");
+      const data = await axios.get("https://jsonplaceholder.typicode.com/posts");
 
       console.log(data.data);
       setTableComment(data.data);
     } catch (e) {
       console.log(e);
+
     }
   };
+
+  // const deleteTableComment = async () => {
+
+  //   const data = await axios.delete("https://jsonplaceholder.typicode.com/posts/1", {
+  //   });
+  // }
+
+
+
+
+  // const putTableComment = async (data) => {
+  //   try {
+  //     const data = await axios.put("https://jsonplaceholder.typicode.com/posts/100");
+  //     console.log(data.data);
+  //     setTableComment(data.data)
+  //   } catch (data) {
+  //     console.log(data);
+  //   }
+  // }
+
+  const postTableComment = async () => {
+    // PUT request using axios with error handling
+    const data = { title: 'React PUT Request Example' };
+    axios.post('https://jsonplaceholder.typicode.com/posts', {
+     
+      body: JSON.stringify({
+        id: 1,
+        title: 'foo',
+        body: 'bar',
+        userId: 1,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then((data) => data.json(data))
+      .then((data) => console.log(data));
+  }
 
   const handleSearch = (e) => {
     //   e.preventDefault();
@@ -27,12 +66,15 @@ function Comment() {
     //     return i.postId.match(input);
     // });
   };
+
   useEffect(() => {
     getTableComment();
+    // deleteTableComment();
   }, []);
+
   return (
     <div>
-      <input name="input" placeholder="search by postId" type="number" />
+      {/* <input name="input" placeholder="search by postId" type="number" />
       <Button
         variant="outline-secondary btn-sm"
         onClick={() => {
@@ -40,8 +82,8 @@ function Comment() {
         }}
       >
         search
-      </Button>
-      <Table striped bordered hover>
+      </Button> */}
+      <Table>
         <thead>
           <tr>
             <th>albumId</th>
@@ -58,10 +100,10 @@ function Comment() {
             return (
               <tbody>
                 <tr>
-                  <td>{data.albumId}</td>
+                  <td>{data.userId}</td>
                   <td>{data.id}</td>
                   <td>{data.title}</td>
-                  <td>{data.url}</td>
+                  <td>{data.body}</td>
                   <td>{data.thumbnailUrl}</td>
                 </tr>
               </tbody>
