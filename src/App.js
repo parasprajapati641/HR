@@ -11,7 +11,7 @@ import TablePage from "./components/TablePage/DemoPage.jsx";
 import ProgressDemo from "./components/ProgressDemo/ProgressDemo.jsx";
 import Company from "./components/RajDesign/Company.jsx";
 import Benz from "./components/Rajdesign-2/Benz.jsx";
-import Comment from "./components/Rajdesign-2/Api";
+import Comment from "./components/APIform/Api";
 
 // import { useEffect, useState } from "react";
 

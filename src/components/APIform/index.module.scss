@@ -1,0 +1,36 @@
+.Addbutton {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        padding: 10px;
+        border-radius: 25px;
+        border: 2px solid black;
+    }
+
+
+    .Submit {
+        background-color: #012e3d;
+        color: white;
+        width: 100%;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .Cancle {
+        background-color: #ab7070;
+        color: white;
+        width: 100%;
+        height: 55px;
+        font-size: 20px;
+    }
+
+
+}

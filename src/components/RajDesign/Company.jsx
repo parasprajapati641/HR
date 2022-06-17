@@ -40,7 +40,7 @@ function Design() {
           </Dropdown>
         </Col>
       </Row>
-      <Row >
+      <Row justify="center" >
         <Col xl={24} xxl={4}>
           <span className={styles.file}>Company</span>
           <p className={styles.Fill}>

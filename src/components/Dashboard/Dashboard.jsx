@@ -89,7 +89,7 @@ export const Dashboard = (props) => {
             <span onClick={() => handleResources()}>Resources</span>
             <span onClick={() => handleAbout()}>About</span>
           </Col>
-          <Col sm={24} xs={24} md={6} lg={12} xxl={4}>
+          <Col sm={24} xs={24} md={6} lg={12} xl={2} xxl={4}>
             <div className={styles.demo}>
               <Popover content={content} placement="topRight">
                 <Button
