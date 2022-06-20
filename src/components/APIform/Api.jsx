@@ -31,7 +31,10 @@ function Comment() {
 
   const [tableComment, setTableComment] = useState([]);
   const [data, setData] = useState([]);
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [form] = Form.useForm();
 
   const getTableComment = async () => {
     try {
@@ -39,28 +42,30 @@ function Comment() {
 
       console.log("get", data.data);
       setTableComment([...data.data]);
-    } catch (err) {
-      console.log("get", err);
     }
 
+    catch (err) {
+      console.log("get", err);
+    }
   };
 
-  const postTableComment = async () => {
+
+  const postTableComment = async (e) => {
     try {
-      const data = await axios.post('https://jsonplaceholder.typicode.com/posts', {
+      const data = await axios.patch('https://jsonplaceholder.typicode.com/posts', {
 
         body: {
-          id: 101,
-          title: "paras",
-          body: "prajapati",
+          title: title,
+          body: body,
           userId: 1,
         },
-
       })
-      console.log("post", data.data.body);
-      setTableComment([...data.data.body])
+      console.log("post", data.data.body); 2
 
-
+      if (data) {
+        setTitle("");
+        setBody("");
+      }
     } catch (err) {
       console.log("post", err);
     }
@@ -117,6 +122,14 @@ function Comment() {
     console.log("post", e);
   }
 
+  // const clear = () => {
+  //   form.setFieldsValue({
+  //     title: "",
+  //     body: "",
+
+  //   })
+  // }
+
   const handleDeleteClick = (index) => {
     const newData = tableComment;
     console.log("paras", index);
@@ -149,11 +162,18 @@ function Comment() {
       >
         <Row justify="center" className={styles.Main}>
           <Col xl={22}>
-            <Form onFinish={onFinish}>
+            <Form
+              onFinish={onFinish}
+              initialValues={{
+                title: "",
+                body: "",
+              }}
+            >
               <Form.Item name="title">
                 <Input
                   name="title"
                   placeholder="title"
+                  onChange={(e) => setTitle(e.target.value)}
                 />
               </Form.Item>
 
@@ -161,6 +181,7 @@ function Comment() {
                 <Input
                   name="body"
                   placeholder="body"
+                  onChange={(e) => setBody(e.target.value)}
                 />
               </Form.Item>
 
@@ -169,7 +190,10 @@ function Comment() {
                   <Button
                     size="large"
                     shape="round"
-                    htmlType="submit"
+                    onClick={() => {
+                      postTableComment();
+                    }}
+                    // htmlType="submit"
                     className={styles.Submit}
                   >
                     Submit
@@ -177,13 +201,15 @@ function Comment() {
 
                 </Col>
                 <Col xl={12} >
-                  <Button size="large" shape="round" className={styles.Cancle}>
+                  <Button
+                    size="large"
+                    shape="round"
+                    className={styles.Cancle}>
                     Cancel
                   </Button>
                 </Col>
               </Row>
             </Form>
-
           </Col>
         </Row>
       </Modal>
