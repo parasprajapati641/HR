@@ -1,0 +1,82 @@
+.within {
+    text-align: center;
+
+    .view {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .apply {
+        font-size: 25px;
+    }
+}
+
+.Paras {
+    margin-bottom: 30px;
+
+    >span {
+        border-radius: 12px !important;
+        border: 2px solid #bfbfbf;
+
+        >span {
+            >span {
+                padding: 10px;
+                color: #bfbfbf;
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+
+        >input {
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+        }
+    }
+
+
+}
+
+.headerButton {
+    .deleteButton {
+        background-color: #012e3d;
+        color: white;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .branchButton {
+        background-color: #ab7070;
+        color: white;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+}
+
+.main {
+    >div {
+        >div {
+            >div {
+                >div {
+                    >div {
+                        >div {
+                            >table {
+                                >thead {
+                                    >tr {
+                                        >th {
+                                            background-color: #012E3D;
+                                            color: aliceblue;
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

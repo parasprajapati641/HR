@@ -50,7 +50,7 @@ function Comment() {
   };
 
 
-  const postTableComment = async (e) => {
+  const postTableComment = async () => {
     try {
       const data = await axios.patch('https://jsonplaceholder.typicode.com/posts', {
 
@@ -60,7 +60,7 @@ function Comment() {
           userId: 1,
         },
       })
-      console.log("post", data.data.body); 2
+      console.log("post", data.data.body); 
 
       if (data) {
         setTitle("");
@@ -102,7 +102,7 @@ function Comment() {
   useEffect(() => {
     getTableComment();
     deleteTableComment();
-    postTableComment();
+    postTableComment();               
     putTableComment();
   }, []);
 
