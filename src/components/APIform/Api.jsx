@@ -50,7 +50,7 @@ function Comment() {
   };
 
 
-  const postTableComment = async () => {
+  const postTableComment = async (e) => {
     try {
       const data = await axios.patch('https://jsonplaceholder.typicode.com/posts', {
 
@@ -193,7 +193,7 @@ function Comment() {
                     onClick={() => {
                       postTableComment();
                     }}
-                    // htmlType="submit"
+                    htmlType="submit"
                     className={styles.Submit}
                   >
                     Submit

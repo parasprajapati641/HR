@@ -5,6 +5,7 @@ import GoogleMapReact from 'google-map-react';
 import styles from "./index.module.scss"
 
 function APIform() {
+    const [data, setData] = useState([])
     const [branchName, setBranchName] = useState("");
     const [checkInRadius, setCheckInRadius] = useState("");
     const [postal, setPostal] = useState("");
@@ -28,12 +29,11 @@ function APIform() {
 
 
             const data = await axios.post("https://ef71-2405-201-200c-ca65-35f8-eb11-9329-b6e7.in.ngrok.io/api/branch",
-                body, { headers: header }, {
-            })
+                body, { headers: header })
+
                 .then((res) => {
                     console.log("res", res);
                 })
-            console.log("post", data.data);
 
             if (data) {
                 setBranchName("");
@@ -84,7 +84,7 @@ function APIform() {
                                     name='branchName'
                                     className={styles.put}
                                     placeholder="Enter Branch Name..."
-                                    onClick={(e) => { setBranchName(e.target.value) }}
+                                    onChange={(e) => setBranchName(e.target.value)}
                                 />
                             </Col>
 
@@ -96,7 +96,7 @@ function APIform() {
                                     name='checkInRadius'
                                     className={styles.put}
                                     placeholder="Enter Check In Radius..."
-                                    onClick={(e) => { setCheckInRadius(e.target.value) }}
+                                    onChange={(e) => setCheckInRadius(e.target.value)}
                                 />
                             </Col>
                             <Col xl={11} className={styles.component}>
@@ -107,7 +107,7 @@ function APIform() {
                                     name='postal'
                                     className={styles.put}
                                     placeholder="Enter Postal Code..."
-                                    onClick={(e) => { setPostal(e.target.value) }}
+                                    onChange={(e) => setPostal(e.target.value)}
                                 />
                             </Col>
 
@@ -119,7 +119,7 @@ function APIform() {
                                     name='address'
                                     className={styles.unit}
                                     placeholder="Enter Address..."
-                                    onClick={(e) => { setAddress(e.target.value) }}
+                                    onChange={(e) => setAddress(e.target.value)}
                                 />
                             </Col>
                             <Col xl={11} className={styles.component}>
@@ -130,35 +130,33 @@ function APIform() {
                                     name='country'
                                     className={styles.unit}
                                     placeholder="Select Country..."
-                                    onClick={(e) => { setCountry(e.target.value) }}
+                                    onChange={(e) => setCountry(e.target.value)}
                                 />
                             </Col>
                         </Row>
                     </div>
                 </Col>
             </Row>
-           
+
             <Row justify="center">
-                <Col xl={3} className={styles.Footer}>
-                    <Button
-                        size="large"
-                        shape="round"
-                        className={styles.Cancel}
-                    >
-                        Cancel
-                    </Button>
-                </Col>
                 <Col xl={3} className={styles.Footer}>
                     <Button
                         size="large"
                         shape="round"
                         className={styles.Apply}
                         htmlType="submit"
-                        onClick={() => {
-                            postTableComment();
-                        }}
                     >
-                        Apply
+                        Submit
+                    </Button>
+                </Col>
+                <Col xl={3} className={styles.Footer}>
+                    <Button
+                        size="large"
+                        shape="round"
+                        className={styles.Cancel}
+
+                    >
+                        Cancel
                     </Button>
                 </Col>
             </Row>
