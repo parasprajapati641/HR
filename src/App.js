@@ -12,7 +12,8 @@ import ProgressDemo from "./components/ProgressDemo/ProgressDemo.jsx";
 import Company from "./components/RajDesign/Company.jsx";
 import Benz from "./components/Rajdesign-2/Benz.jsx";
 import Comment from "./components/APIform/Api";
-import APIform2 from "./components/APIform-2/APIform2.jsx"
+import APItable from "./components/APItable/APItable.jsx"
+import APIform from "./components/APIFORM-2/APIform";
 
 // import { useEffect, useState } from "react";
 
@@ -56,7 +57,9 @@ function App() {
 
         <Route path="/comment" element={<Comment />} />
 
-        <Route path="/component" element={<APIform2 />} />
+        <Route path="/component" element={<APItable />} />
+
+        <Route path="/apiform" element={<APIform />} />
 
       </Routes>
     </div>
